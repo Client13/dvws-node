@@ -1,4 +1,4 @@
-var mysql = require('mysql');
+Hivar mysql = require('mysql');
 require('dotenv').config();
 
 const mongoose = require('mongoose');
@@ -6,10 +6,11 @@ const mongoose = require('mongoose');
 const User = require('./models/users');
 
 
-const connHost = process.env.SQL_LOCAL_CONN_URL;
-const connUser = process.env.SQL_username;
-const connPass = process.env.SQL_password;
-const connUri = process.env.MONGO_LOCAL_CONN_URL;
+
+const connHost = "localhost";
+const connUser = "root";
+const connPass = "mysecretpassword;
+const connUri = "mongodb+srv://Dropout:2H9VNljUW7P9Hpuv@cluster0.df7a5.mongodb.net/Axis?retryWrites=true&w=majority" ;
 
 var connection = mysql.createConnection({
   host: connHost,
