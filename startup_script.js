@@ -10,7 +10,7 @@ const User = require('./models/users');
 const connHost = "localhost";
 const connUser = "root";
 const connPass = "mysecretpassword;
-const connUri = "mongodb+srv://Dropout:2H9VNljUW7P9Hpuv@cluster0.df7a5.mongodb.net/Axis?retryWrites=true&w=majority" ;
+const connUri = `mongodb+srv://Dropout:2H9VNljUW7P9Hpuv@cluster0.df7a5.mongodb.net/Axis?retryWrites=true&w=majority`;
 
 var connection = mysql.createConnection({
   host: connHost,
